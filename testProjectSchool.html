@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Font awesome -->
+<script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+<!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/main.css">
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <title>Group 3 School</title>
+
+</head>
+<body class="green lighten-3">
+
+<!-- NavBar -->
+<nav class="green darken-4">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="testProjectSchool.html" class="brand-logo left">School Logo</a>
+        <a href="#" data-target="slide-out" class="button-collapse show-on-large right sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li  class="active">
+            <a href="about.html">About Us</a>
+        </li>
+        <li>
+            <a href="academic.html">Academics</a>
+        </li>
+        <li>
+            <a href="schoolLife.html">School Life</a>
+        </li>
+        <li>
+            <a href="admission.html">Admission</a>
+        </li>
+        <li>
+          <a href="login.html">Login/Register</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- SideNav Bar -->
+<ul id="slide-out" class="sidenav green">
+  <li>
+    <a href="index.html" class="white-text">
+      <i class="material-icons">home</i> Home
+    </a>
+  </li>
+    <li>
+      <a href="aboutUs.html" class="white-text">About Us</a>
+    </li>
+    <li>
+      <a href="academics.html" class="white-text">Academics</a>
+    </li>
+    <li>
+      <a href="schoolLife.html" class="white-text">School Life</a>
+    </li>
+    <li>
+      <a href="admission.html" class="white-text">Admission</a>
+    </li>
+    <li>
+      <div class="divider white"></div>
+    </li>
+    <li>
+      <a class="subheader white-text">Follow us on our <strong><em>Social Media</em></strong></a>
+    </li>
+    <li>
+      <div class="divider white"></div>
+    </li>
+    <li>
+      <a href="applyNow.html" class="white-text">Apply Online Now</a>
+    </li>
+    <li>
+      <a href="contactUs.html" class="white-text">Contact Us</a>
+    </li>
+    <li><a href="login.html" class="waves-effect white-text">Logout</a></li>
+</ul>
+<!-- Full Width Slider -->
+<div class="container">
+  <div class="carousel carousel-slider no-autoinit">
+    <a class="carousel-item" href="#one!"><img src="SchoolPix/s8.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="SchoolPix/s2.jpeg"></a>
+    <a class="carousel-item" href="#three"><img src="SchoolPix/s4.jpg"></a>
+    <a class="carousel-item" href="#four"><img src="SchoolPix/s3.jpeg"></a>
+    <a class="carousel-item" href="#five!"><img src="SchoolPix/s1.jpeg"></a>        
+    <a class="carousel-item" href="#six!"><img src="SchoolPix/s10.jpg"></a>        
+    <a class="carousel-item" href="#seven!"><img src="SchoolPix/s5.jpg"></a>        
+    <a class="carousel-item" href="#eight!"><img src="SchoolPix/s6.png"></a>             
+    <a class="carousel-item" href="#nine!"><img src="SchoolPix/s9.jpeg"></a>        
+    <a class="carousel-item" href="#ten!"><img src="SchoolPix/s11.jpg"></a>        
+</div>
+</div>
+<div class="container">
+  <div class="center">
+    <h4>School Life</h4>
+      <p>
+        <blockquote>The School of Life is built on the belief that the journey to finding fulfilment begins with self-knowledge. Only when we have a sense of who we really are that we can make reliable decisions about the things that matter. Sadly, tools and techniques for developing self-knowledge and fulfilment are hard to develop, and too many of us go through life without ever really understanding what’s going on in the recesses of our minds. That’s why the School of Life was created, as a resource for exploring self-knowledge, relationships, work, socialising, finding calm and enjoying culture through content, community and conversation.</blockquote>
+      </p>
+  </div>
+</div>
+<br><br><br><br>
+<!-- Section Footer -->
+<footer class="section green white-text center">
+  <p>Website: www.group3canetown.com</p>
+  <p>Copyright &copy; 2021</p>
+</footer>
+
+<!-- Jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- CDeditor CDN -->
+<script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      M.AutoInit();
+      var options = {
+          fullWidth: true,
+          indicators: true
+      };
+      var elems = document.querySelector('.carousel.no-autoinit');
+      console.log(elems)
+      var instances = M.Carousel.init(elems, options);
+  })
+</script>
+
+</body>
+</html>
